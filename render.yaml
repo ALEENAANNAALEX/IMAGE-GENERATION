@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ai-image-generator
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_IMAGE_API_KEY
+        sync: false
+        placeholder: "Enter your img-sk API key here"
+      - key: PORT
+        value: 5002
