@@ -1,0 +1,15 @@
+{
+  "name": "ai-generator-fullstack",
+  "version": "1.0.0",
+  "description": "AI Image Generator hosted on Render",
+  "main": "server/index.js",
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm install && NODE_ENV=production node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
